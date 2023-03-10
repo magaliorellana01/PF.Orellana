@@ -1,0 +1,124 @@
+/* quienes somos */
+
+.quienes-somos1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;    
+        height: auto;
+        max-width: 1200px;
+        grid-template-columns: repeat(2,1fr);
+        padding: 45px 0px;
+    }
+
+
+      .quienes-somos1__texto {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 10px;
+     @media screen and (min-width:768px) {
+        grid-column: 1/2;
+       text-align: left;
+       padding-right: 20px;
+       margin: auto;
+     }
+       h1 {
+       font-size: $h1-mobile;
+       color: $color-secundario;
+       @media screen and (min-width:768px) {
+        font-size: $h1-desktop;
+        color: $color-secundario;
+       }
+       } 
+       p {
+        font-size: $p-mobile;
+        color: $color-secundario;
+        @media screen and (min-width:768px) {
+            font-size: $p-desktop;
+        color: $color-secundario;
+        }
+      }    
+
+    }
+
+      .quienes-somos1__imagen {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding-top: 30px;
+        @media screen and (min-width:768px) {
+            margin: auto;   
+            grid-column: 2/3
+        }
+
+        .quienes-somos1__img {
+            width: 80%;
+        }
+         }
+
+        }
+
+
+    
+
+
+.quienes-somos2 {
+    width: 100%;
+    background-color: $color-principal;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    
+    @media screen and (min-width: 768px) {
+        width: 80%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 150px;
+    }
+}
+
+.quienes-somos2__item1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 70px;
+    
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.quienes-somos2__item2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    
+    @media screen and (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+

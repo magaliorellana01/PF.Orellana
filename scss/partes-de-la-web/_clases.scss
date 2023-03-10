@@ -1,0 +1,83 @@
+/* clases */
+
+.clases__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width:768px){
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        grid-template-columns: repeat(2,1fr);
+        padding: 45px 0px;
+    }
+
+}
+
+.box1 {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 10px;
+    @media screen and (min-width:768px){
+        grid-column: 1/2;
+        text-align: left;
+        padding-right: 20px;
+        margin: auto;
+    }
+    p { 
+        font-size: $p-mobile;
+        color: $color-secundario;
+        @media screen and (min-width:768px){
+            font-size: $p-desktop;
+        }
+    }
+    h1 {
+        font-size: $h1-mobile;
+        color: $color-secundario;
+        @media screen and (min-width:768px){
+            font-size: $h1-desktop;
+
+        }
+    }
+}
+
+.box2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    
+    p {
+        font-size: $p-mobile;
+        color: $color-secundario;
+        @media screen and (min-width:768px){
+            font-size: $p-desktop;
+           
+        }
+    }
+}
+
+.box2__imagen {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+
+    @media screen and (min-width:768px){
+        margin: auto;
+        grid-column: 2/3
+    }
+}
+
+.box2__img {
+    width: 80%;
+
+    @media screen and (min-width:768px){
+        width: 100%;
+    }
+}

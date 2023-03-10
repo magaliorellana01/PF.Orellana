@@ -1,0 +1,29 @@
+@mixin form-div ($pad:0.7em, $bg:none){
+    width: 100%;
+    padding: $pad;
+    border: none;
+    background: $bg;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+
+@mixin form-bttn {
+    background: #3094d6;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+@mixin nav-item {
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: 0.4s;
+}
+
+@mixin secc-item {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
