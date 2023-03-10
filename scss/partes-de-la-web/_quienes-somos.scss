@@ -85,40 +85,43 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: center;
         justify-content: center;
         margin-top: 150px;
     }
-}
-
-.quienes-somos2__item1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    min-width: 200px;
-    height: auto;
-    margin: auto;
-    margin-bottom: 70px;
-    
-    @media screen and (min-width: 768px) {
-        width: 50%;
+    .quienes-somos2__item1 {
         display: flex;
         justify-content: center;
+        width: 100%;
+        min-width: 200px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 70px;
+        
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
     }
-}
-
-.quienes-somos2__item2 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    min-width: 200px;
-    margin: auto;
-    margin-bottom: 70px;
-    
-    @media screen and (min-width: 768px) {
-        width: 50%;
+    .quienes-somos2__item2 {
         display: flex;
         justify-content: center;
+        width: 100%;
+        height: auto;
+        min-width: 200px;
+        margin: auto;
+        margin-bottom: 70px;
+        
+        @media screen and (min-width: 768px) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
     }
+    
+    
 }
+
+
 
